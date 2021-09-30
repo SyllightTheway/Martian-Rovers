@@ -1,0 +1,245 @@
+body {
+    background-color: #F3D5C0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 135px 0 0 0;
+    text-align: center;
+}
+
+main {
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    position: relative;
+}
+
+ul {
+    padding: 0 0 0 10px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+#header {
+    background-color: #D4B499;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+#header-img {
+    width: 175px;
+    height: auto;
+}
+
+#nav-bar {
+    width: 425px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1.15rem;
+}
+
+#title h1 {
+    font-size: 2.7rem;
+    margin: 50px auto;
+}
+
+#title img {
+    width: 100%;
+    height: auto;
+}
+
+#features {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.feature-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 21px auto 10px auto;
+}
+
+.feature-description {
+    margin: auto;
+    max-width: 25vw;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-top: 25px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+#how-it-works {
+    background-color: #D4B499;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+#video {
+    width: 65%;
+    height: 35vmax;
+}
+
+.pricing-types {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pricing-container {
+    background-color: #D4B499;
+    padding: 25px 50px;
+    width: calc(100% / 5);
+    flex-shrink: 1;
+}
+
+.pricing-container h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    background-color: #D4B499;
+}
+
+.pricing-container p {
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.pricing-container ul {
+    margin-bottom: 70px;
+}
+
+.pricing-container li {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+#contact {
+    background-color: #D4B499;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+#contact h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#email {
+    display: block;
+    padding: 10px;
+    width: 400px;
+    margin: auto;
+}
+
+#submit {
+    padding: 10px 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    background-color: #506d84;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#submit:hover {
+    background-color: #283966;
+}
+
+.learn-more-btn {
+    background-color: #7892c2;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Trebuchet MS;
+    font-size: 17px;
+    padding: 12px 26px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #283966;
+}
+
+.learn-more-btn:hover {
+    background-color: #506d84;
+}
+
+.learn-more-btn:active {
+    position: relative;
+    top: 1px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        top: 50px;
+    }
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        margin-top: 170px;
+    }
+    #header {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    #features {
+        flex-direction: column;
+        height: 750px;
+    }
+    .feature-item {
+        transform: scale(0.9);
+    }
+    .feature-description {
+        max-width: 60vw;
+    }
+    #video {
+        width: 100%;
+        height: 43vmax;
+    }
+    .pricing-types {
+        flex-direction: column;
+        height: 1450px;
+    }
+    .pricing-container {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .pricing-types {
+        margin: auto;
+        flex-wrap: wrap;
+    }
+    .pricing-container {
+        margin-top: 25px;
+        width: 250px;
+    }
+}
